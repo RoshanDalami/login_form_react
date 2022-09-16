@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif
+}
+.container{
+    width: 900px;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+}
+.container .image_side{
+    width: 450px;
+    height: 500px;
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+.container  .form_part .welcome{
+    margin-top: -60px;
+    margin-bottom: 20px;
+
+   
+}
+.container  .form_part .welcome .welcome_text{
+    font-size: 20px;
+    
+}
+
+.error{
+    background-color: #FA9494;
+    border: 1px solid red;
+    border-radius: 12px;
+    margin-top: 20px ;
+    padding: 2px 10px 2px 10px ;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.error.shake{
+    animation: shake 0.5s;
+    animation-iteration-count:300ms;
+}
+.error .error_message{
+    
+    padding: 5px 0px;
+    color: black;
+}
+.error .bx-plus{
+    display: inline-block;
+    transform: rotate(45deg);
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.container .form_part{
+    margin-top: 100px;
+    margin-left: 50px;
+    position: relative;
+}
+label{
+    letter-spacing: 3px;
+}
+.container .text-input{
+    padding: 10px;
+    width: 90%;
+    height: 50%;
+    border:0;
+    border-bottom: 1px solid #fff;
+    background:none;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ;
+    
+}
+.container .form_part .text-input:hover{
+    width: 100%;
+}
+.container .form_part .login_btn{
+    
+    border: 1px solid black;
+    color:black;
+    background:none;
+    padding: 2px 40px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+.container .form_part .login_btn:hover{
+    background-color: #00D7FF;
+    color: #fff;
+    border: 0px;
+   }
+   .container  .form_part .create_account{
+    margin-top: 20px;
+}
+.container  .form_part .social-link a{
+    display: inline;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 70%;
+    color: black;
+   
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
